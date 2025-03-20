@@ -7,7 +7,7 @@ fastapi-users[sqlalchemy]
 fastapi[all]
 uvicorn~=0.34.0
 asyncpg
-fastapi-cache2[redis]
+fastapi-cache[redis]
 redis~=4.0.0
 gunicorn
 celery~=5.4.0
