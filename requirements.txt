@@ -7,8 +7,8 @@ fastapi-users[sqlalchemy]
 fastapi[all]
 uvicorn~=0.34.0
 asyncpg
-fastapi-cache[redis]
-redis~=4.0.0
+fastapi-cache2[redis]
+redis>=4.0.0
 gunicorn
 celery~=5.4.0
 flower
