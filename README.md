@@ -51,6 +51,11 @@
 ![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/put_links_short_code_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/put_links_short_code_1.png)
 #### DELETE /links/{short_code}
 ![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/delete_links_short_code_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/delete_links_short_code_1.png)
+
+---
+Автор проекта пыталась реализовать обработку токена и привязку к зарегистрированному пользователю:
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/registry_show.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/registry_show.png)
+Но ей не удалось это победить, поэтому был оставлен только первичный функционал регистрации и получения токена:
 #### POST /links/register
 ![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_register_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_register_1.png)
 #### POST /links/token
