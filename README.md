@@ -8,7 +8,7 @@
 `PUT /links/{short_code}` – привязывает к короткой ссылке новую длинную.<br>
 `GET /links/{short_code}` – перенаправляет на оригинальный URL.<br>
 `GET /links/search/` – осуществляет поиск короткой ссылки по оригинальному URL.<br>
-`GET /links/popular_links/` – выводит детальную статистику по 10 самым популярным по посещаемости ссылкам.<br>
+`GET /links/popular_links/` – выводит детальную статистику по 10 самым популярных по посещаемости ссылкам.<br>
 `GET /links/{short_code}/stats` – отображает оригинальный URL, возвращает дату создания, количество переходов, дату последнего использования.<br>
 `PUT /links/{short_code}/project` – позволяет добавить ссылку в проект или переместить в новый.<br>
 `GET /links/{short_code}/project/links` – выводит все ссылки, которые есть в указанном проекте.<br>
@@ -31,7 +31,33 @@
 Перейдите по адресу http://localhost:8000/docs, чтобы ознакомиться с документацией API <br>
 
 ---
+### Примеры запросов
+#### POST /links/shorten
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_shorten_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_shorten_1.png)
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_shorten_2.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_shorten_2.png)
+#### GET /links/{short_code}
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_shorten_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/get_links_short_code_1.png)
+#### GET /links/search/
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/get_links_search_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/get_links_search_1.png)
+#### GET /links/popular_links/
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/get_links_popular_links_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/get_links_popular_links_1.png)
+#### GET /links/{short_code}/stats
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/get_links_short_code_stats_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/get_links_short_code_stats_1.png)
+#### PUT /links/{short_code}/project
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/put_links_short_code_project_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/put_links_short_code_project_1.png)
+#### GET /links/{short_code}/project/links
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/get_links_project_project_name_links_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/get_links_project_project_name_links_1.png)
+#### PUT /links/{short_code}
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/put_links_short_code_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/put_links_short_code_1.png)
+#### DELETE /links/{short_code}
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/delete_links_short_code_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/delete_links_short_code_1.png)
+#### POST /links/register
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_register_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_register_1.png)
+#### POST /links/token
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_token_1.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_token_1.png)
+![https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_token_2.png](https://github.com/akiltrebreg/url_short_service/blob/main/screenshots/post_links_token_2.png)
 
+---
 ## Описание базы данных
 
 Проект использует реляционную базу данных PostgreSQL с использованием SQLAlchemy ORM. В базе данных определены две основные таблицы: `shortened_urls` и `users`.
